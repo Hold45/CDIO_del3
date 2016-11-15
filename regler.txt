@@ -35,6 +35,12 @@ Eksempel: Fire spillere, spiller A, B, C, og D spiller et spil. De er placeret i
 
 203. Når en spiller mister penge, trækkes det fra deres pengebeholdning.
 
+204. Spillere kan betale penge til hinanden.
+
+204.1. Når en spiller betaler penge til en anden spiller mister den betalende spiller så mange penge, og den betalte spiller for så mange penge.
+
+204.1a. Hvis en spiller prøver at betale flere penge en vedkommende har, betaler de alle deres penge. Den betalte spiller for penge svarende til hvor mange penge den betalende spiller havde
+
 3. Spillets opsætning
 
 301. Ved spillets opsætning gøres følgende.
@@ -57,11 +63,11 @@ Eksempel: Fire spillere, spiller A, B, C, og D spiller et spil. De er placeret i
 
 401.2. Når en spiller taber spillet elimineres de. Følgende handlinger foretages.
 
-401.2b. Spillerens brik fjernes fra brættet.
+401.2a. Spillerens brik fjernes fra brættet.
 
-401.2c. Spillerens mister ejerskab af alle sine felter.
+401.2b. Spillerens mister ejerskab af alle sine felter.
 
-401.2d. Spilleren deltager ikke længere i spillet, og fjernes fra turrækkefølgen.
+401.2c. Spilleren deltager ikke længere i spillet, og fjernes fra turrækkefølgen.
 
 402. Hvis en spiller mister flere penge end de har, taber de spillet.
 
@@ -125,9 +131,9 @@ Eksempel: Fire spillere, spiller A, B, C, og D spiller et spil. De er placeret i
 Eksempel: Spiller A har 1000 penge og lander på et felt der koster 700 penge. Spiller A har nu 300 penge og eger feltet.
 Eksempel: Spiller B har 1000 penge og lander på et felt der koster 1300 penge. Spiller B har fortsat 1000 penge, men eger ikke feltet.
 
-702.4. Spillere forsøger at købe felter, hvis de er af supertypen grund, når de lander på dem, se 704.2b.
+702.4. Spillere forsøger at købe felter, hvis de er af supertypen grund, når de lander på dem, se 704.2a.
 
-703. Når en spiller erhverver sig ejerskab over et felt ejer de det ind til de taber, se 401.2c.
+703. Når en spiller erhverver sig ejerskab over et felt ejer de det ind til de taber, se 401.2b.
 
 704. Grunde
 
@@ -135,11 +141,11 @@ Eksempel: Spiller B har 1000 penge og lander på et felt der koster 1300 penge. 
 
 704.2. Når en spiller lander på en grund har det en effekt.
 
-704.2b. Når en spiller lander på en grund, der ikke ejes af nogen spillere, skal vedkommende forsøge at købe den.
+704.2a. Når en spiller lander på en grund, der ikke ejes af nogen spillere, skal vedkommende forsøge at købe den.
 
-704.2c. Når en spiller lander på en grund, der ejes af en anden spiller, skal vedkommende betale en mængde penge afhængig af den pågældende grund til ejeren.
+704.2b. Når en spiller lander på en grund, der ejes af en anden spiller, skal vedkommende betale en mængde penge afhængig af den pågældende grund til ejeren.
 
-704.2d. Når en spiller lander på en grund som vedkommende ejer i forvejen, sker der ikke noget.
+704.2c. Når en spiller lander på en grund som vedkommende ejer i forvejen, sker der ikke noget.
 
 705. Hændelser
 

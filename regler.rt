@@ -34,7 +34,13 @@ Eksempel: Fire spillere, spiller A, B, C, og D spiller et spil. De er placeret i
 
 |Når en spiller mister penge, trækkes det fra deres pengebeholdning.
 
-<Spillets opsætning
+|Spillere kan betale penge til hinanden.
+
+>Når en spiller betaler penge til en anden spiller mister den betalende spiller så mange penge, og den betalte spiller for så mange penge.
+
+>Hvis en spiller prøver at betale flere penge en vedkommende har, betaler de alle deres penge. Den betalte spiller for penge svarende til hvor mange penge den betalende spiller havde
+
+<<<Spillets opsætning
 
 >Ved spillets opsætning gøres følgende.
 
@@ -58,7 +64,7 @@ Eksempel: Fire spillere, spiller A, B, C, og D spiller et spil. De er placeret i
 
 >Spillerens brik fjernes fra brættet.
 
-misterejerskabtab|Spillerens mister ejerskab af alle sine felter.
+misterejerskabtab|Spilleren mister ejerskab af alle deres felter.
 
 |Spilleren deltager ikke længere i spillet, og fjernes fra turrækkefølgen.
 
