@@ -1,0 +1,145 @@
+
+|Generelt
+
+>Deltagere
+
+>Deltagere refereres til som spillere.
+
+|Et spil foregår mellem to til seks spillere.
+
+|Hver spiller har en unik farve.
+
+|Hver spiller har en unik brik, se \ref:brikker.
+
+|Hver spiller kan eje grunde, se \ref:ejerskab.
+
+<Struktur
+
+>Spillet er delt op i ture.
+
+|Spillere skiftes til at havde en tur.
+
+|Spillere har en rækkefølge. Efter en spiller har taget sin tur, bliver det den næste spillere i rækkefølgens tur. Når den sidste spiller har haft sin tur, tager den første sin tur.
+Eksempel: Fire spillere, spiller A, B, C, og D spiller et spil. De er placeret i rækkefølgen A-\>B-\>C-\>D. Hvis spiller B starter, vil rækkefølgen være B-\>C-\>D-\>A-\>B osv.
+
+<Tur
+
+>Når en spiller tager sin tur, slår de med to sekssidet terninger, og rykker deres brik svarende til summen, se \ref:rykbrik.
+
+<<penge
+
+>Hver spiller har en pengebeholdning.
+
+|Når en spiller for penge, ligges det til deres pengebeholdning.
+
+|Når en spiller mister penge, trækkes det fra deres pengebeholdning.
+
+<Spillets opsætning
+
+>Ved spillets opsætning gøres følgende.
+
+>Hver spiller tildeles en farve tilfældigt.
+
+|Hver spiller for 30000 penge.
+
+|Hver spiller placere deres brik på det første felt på spillepladen.
+
+|En tilfældig spiller vælges til at starte spillet.
+
+|Den valgte spiller tager sin første tur.
+
+<<Spillets afslutning
+
+>At tabe
+
+>Spillere kan tabe spillet.
+
+|Når en spiller taber spillet elimineres de. Følgende handlinger foretages.
+
+>Spillerens brik fjernes fra brættet.
+
+misterejerskabtab|Spillerens mister ejerskab af alle sine felter.
+
+|Spilleren deltager ikke længere i spillet, og fjernes fra turrækkefølgen.
+
+lose2many<<Hvis en spiller mister flere penge end de har, taber de spillet.
+
+|At vinde
+
+>Når alle spillere bortset fra en har tabt, vinder den tilbageværende spiller
+
+<<Spillebrættet
+
+>Opbygning
+
+>Spillebrættet er delt op i 21 nummererede felter, se \ref:felter.
+
+|Felterne er arrangeret i en cirkel.
+
+brikker<<Brikker
+
+>Hver spiller har en brik.
+
+|Brikker kan stå på felter.
+
+|Brikker står altid på et felt.
+
+|Brikker kan kun stå på et felt ad gangen.
+
+rykbrik|Brikker kan rykkes fra et felt til et andet.
+
+>Når en brik rykkes, rykkes den i urets retning fra felt til felt.
+
+|Når en brik rykkes, rykkes den en mængde, hvilket indikere hvor mange felter den skal flyttes.
+
+|Hvis en brik rykkes ud over det højest nummererede felt fortsætter den i cirklen til det lavest nummererede.
+
+|Når en brik rykkes fra et felt til et andet, lander brikkens ejer på det felt, brikken rykkes til.
+
+<Hver brik har en farve der svarer til ejerens farve.
+
+felter<Felter
+
+>Attributter
+
+>Hvert felt har et navn
+
+|Hvert felt har en supertype og en type.
+
+|Der er to supertyper af felter; felter der kan eges, kaldet grunde, og felter der ikke kan, kaldet hændelser.
+
+|Der er 5 typer felter: Territory, Refuge, Labor Camp, Tax, og Fleet.
+
+|Felter af typen Territory, Labor Camp, eller Fleet er af supertypen grund.
+
+|Felter af typen Refuge eller Tax er af supertypen hændelse.
+
+ejerskab<Ejerskab af felter
+
+>Nogle felter kan købes af spillere.
+
+|Når en spiller køber et felt, for de ejerskab over det.
+
+|Når en spiller forsøger at købe et felt, sammenligner de deres penge med feltets pris. Hvis de har mindst lige så mange penge som feltet koster, mister de så mange penge som det koster, og køber feltet. Hvis ikke de har nok sker der ikke noget.
+Eksempel: Spiller A har 1000 penge og lander på et felt der koster 700 penge. Spiller A har nu 300 penge og eger feltet.
+Eksempel: Spiller B har 1000 penge og lander på et felt der koster 1300 penge. Spiller B har fortsat 1000 penge, men eger ikke feltet.
+
+|Spillere forsøger at købe felter, hvis de er af supertypen grund, når de lander på dem, se \ref:landpaagrund.
+
+<Når en spiller erhverver sig ejerskab over et felt ejer de det ind til de taber, se \ref:misterejerskabtab.
+
+|Grunde
+
+>Grunde kan ejes af spillere.
+
+|Når en spiller lander på en grund har det en effekt.
+
+landpaagrund>Når en spiller lander på en grund, der ikke ejes af nogen spillere, skal vedkommende forsøge at købe den.
+
+|Når en spiller lander på en grund, der ejes af en anden spiller, skal vedkommende betale en mængde penge afhængig af den pågældende grund til ejeren.
+
+|Når en spiller lander på en grund som vedkommende ejer i forvejen, sker der ikke noget.
+
+<<Hændelser
+
+>Når en spiller lander på en hændelse har det en effekt afhængig af feltet.

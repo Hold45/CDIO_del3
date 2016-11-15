@@ -1,0 +1,147 @@
+
+
+1. Generelt
+
+101. Deltagere
+
+101.1. Deltagere refereres til som spillere.
+
+101.2. Et spil foregår mellem to til seks spillere.
+
+101.3. Hver spiller har en unik farve.
+
+101.4. Hver spiller har en unik brik, se 6.
+
+101.5. Hver spiller kan eje grunde, se 702.
+
+102. Struktur
+
+102.1. Spillet er delt op i ture.
+
+102.2. Spillere skiftes til at havde en tur.
+
+102.3. Spillere har en rækkefølge. Efter en spiller har taget sin tur, bliver det den næste spillere i rækkefølgens tur. Når den sidste spiller har haft sin tur, tager den første sin tur.
+Eksempel: Fire spillere, spiller A, B, C, og D spiller et spil. De er placeret i rækkefølgen A->B->C->D. Hvis spiller B starter, vil rækkefølgen være B->C->D->A->B osv.
+
+103. Tur
+
+103.1. Når en spiller tager sin tur, slår de med to sekssidet terninger, og rykker deres brik svarende til summen, se 605.
+
+2. penge
+
+201. Hver spiller har en pengebeholdning.
+
+202. Når en spiller for penge, ligges det til deres pengebeholdning.
+
+203. Når en spiller mister penge, trækkes det fra deres pengebeholdning.
+
+3. Spillets opsætning
+
+301. Ved spillets opsætning gøres følgende.
+
+301.1. Hver spiller tildeles en farve tilfældigt.
+
+301.2. Hver spiller for 30000 penge.
+
+301.3. Hver spiller placere deres brik på det første felt på spillepladen.
+
+301.4. En tilfældig spiller vælges til at starte spillet.
+
+301.5. Den valgte spiller tager sin første tur.
+
+4. Spillets afslutning
+
+401. At tabe
+
+401.1. Spillere kan tabe spillet.
+
+401.2. Når en spiller taber spillet elimineres de. Følgende handlinger foretages.
+
+401.2b. Spillerens brik fjernes fra brættet.
+
+401.2c. Spillerens mister ejerskab af alle sine felter.
+
+401.2d. Spilleren deltager ikke længere i spillet, og fjernes fra turrækkefølgen.
+
+402. Hvis en spiller mister flere penge end de har, taber de spillet.
+
+403. At vinde
+
+403.1. Når alle spillere bortset fra en har tabt, vinder den tilbageværende spiller
+
+5. Spillebrættet
+
+501. Opbygning
+
+501.1. Spillebrættet er delt op i 21 nummererede felter, se 7.
+
+501.2. Felterne er arrangeret i en cirkel.
+
+6. Brikker
+
+601. Hver spiller har en brik.
+
+602. Brikker kan stå på felter.
+
+603. Brikker står altid på et felt.
+
+604. Brikker kan kun stå på et felt ad gangen.
+
+605. Brikker kan rykkes fra et felt til et andet.
+
+605.1. Når en brik rykkes, rykkes den i urets retning fra felt til felt.
+
+605.2. Når en brik rykkes, rykkes den en mængde, hvilket indikere hvor mange felter den skal flyttes.
+
+605.3. Hvis en brik rykkes ud over det højest nummererede felt fortsætter den i cirklen til det lavest nummererede.
+
+605.4. Når en brik rykkes fra et felt til et andet, lander brikkens ejer på det felt, brikken rykkes til.
+
+606. Hver brik har en farve der svarer til ejerens farve.
+
+7. Felter
+
+701. Attributter
+
+701.1. Hvert felt har et navn
+
+701.2. Hvert felt har en supertype og en type.
+
+701.3. Der er to supertyper af felter; felter der kan eges, kaldet grunde, og felter der ikke kan, kaldet hændelser.
+
+701.4. Der er 5 typer felter: Territory, Refuge, Labor Camp, Tax, og Fleet.
+
+701.5. Felter af typen Territory, Labor Camp, eller Fleet er af supertypen grund.
+
+701.6. Felter af typen Refuge eller Tax er af supertypen hændelse.
+
+702. Ejerskab af felter
+
+702.1. Nogle felter kan købes af spillere.
+
+702.2. Når en spiller køber et felt, for de ejerskab over det.
+
+702.3. Når en spiller forsøger at købe et felt, sammenligner de deres penge med feltets pris. Hvis de har mindst lige så mange penge som feltet koster, mister de så mange penge som det koster, og køber feltet. Hvis ikke de har nok sker der ikke noget.
+Eksempel: Spiller A har 1000 penge og lander på et felt der koster 700 penge. Spiller A har nu 300 penge og eger feltet.
+Eksempel: Spiller B har 1000 penge og lander på et felt der koster 1300 penge. Spiller B har fortsat 1000 penge, men eger ikke feltet.
+
+702.4. Spillere forsøger at købe felter, hvis de er af supertypen grund, når de lander på dem, se 704.2b.
+
+703. Når en spiller erhverver sig ejerskab over et felt ejer de det ind til de taber, se 401.2c.
+
+704. Grunde
+
+704.1. Grunde kan ejes af spillere.
+
+704.2. Når en spiller lander på en grund har det en effekt.
+
+704.2b. Når en spiller lander på en grund, der ikke ejes af nogen spillere, skal vedkommende forsøge at købe den.
+
+704.2c. Når en spiller lander på en grund, der ejes af en anden spiller, skal vedkommende betale en mængde penge afhængig af den pågældende grund til ejeren.
+
+704.2d. Når en spiller lander på en grund som vedkommende ejer i forvejen, sker der ikke noget.
+
+705. Hændelser
+
+705.1. Når en spiller lander på en hændelse har det en effekt afhængig af feltet.
+
