@@ -1,5 +1,5 @@
-package fields;
-import player.*;
+package Fields;
+import Player.*;
 
 
 public abstract class Field {

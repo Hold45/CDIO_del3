@@ -1,4 +1,4 @@
-package ownable;
+package Ownable;
 
 public abstract class LaborCamp extends Ownable {
 
@@ -8,6 +8,6 @@ public abstract class LaborCamp extends Ownable {
 
 	@Override
 	public int getRent() {
-		return super.getOwner().getNumOfFieldType(this)*100*super.getOwner().getGame().getDiceCup().getValue();
+		return super.getOwner().getNumOfFieldType(this)*100*super.getOwner().getGame().getDiceCup().getSum();
 	}
 }

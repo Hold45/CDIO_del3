@@ -1,4 +1,4 @@
-package fields;
+package Fields;
 
 public class TribeEncamp {
 

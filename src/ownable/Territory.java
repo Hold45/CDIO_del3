@@ -1,4 +1,4 @@
-package ownable;
+package Ownable;
 
 
 public abstract class Territory extends Ownable {

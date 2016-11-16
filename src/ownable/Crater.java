@@ -1,4 +1,4 @@
-package ownable;
+package Ownable;
 
 public class Crater extends Territory{
 

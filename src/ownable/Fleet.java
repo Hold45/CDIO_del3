@@ -1,12 +1,14 @@
-package ownable;
-
-import fields.Field;
+package Ownable;
 
 public abstract class Fleet extends Ownable {
 
 	public Fleet(String name, String decs, String onLandText, int price) {
 		super(name, decs, onLandText, price);
-		// TODO Auto-generated constructor stub
+
 	}
 
+	@Override
+	public int getRent() {
+		return (int) Math.pow(2,super.getOwner().getNumOfFieldType(this)-1)*500;
+	}
 }
