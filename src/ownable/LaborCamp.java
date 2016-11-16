@@ -8,6 +8,6 @@ public abstract class LaborCamp extends Ownable {
 
 	@Override
 	public int getRent() {
-		super.getOwner().getGame().getDiceCup().getValue() //TODO: finish this shit
+		return super.getOwner().getNumOfFieldType(this)*100*super.getOwner().getGame().getDiceCup().getValue();
 	}
 }
