@@ -1,5 +1,7 @@
 package player;
+import java.text.NumberFormat.Field;
 import java.util.ArrayList;
+import java.util.stream.Stream;
 
 import fields.*;
 import game.*;
@@ -11,7 +13,7 @@ public class Player {
 	private int value;
 	private Game game;
 	private Account account;
-	private ArrayList<Field> fields;
+	private ArrayList<Ownable> fields;
 
 
 
@@ -59,6 +61,15 @@ public class Player {
 		}
 	}
 
+	public int getNumOfFieldType(Field field){
+		int sum = 0;
+		for(Ownable owns : this.fields){
+			if(owns.getClass().isInstance(field.getClass())
+				sum++;
+		}
+		return sum;
+	}
+	
 
 }
 
