@@ -5,7 +5,7 @@ import Fields.Field;
 import Game.Game;
 import Player.Player;
 import desktop_fields.Empty;
-import Ownable.*;
+import Fields.Ownable.*;
 
 import java.util.ArrayList;
 import java.util.stream.Stream;
@@ -42,6 +42,11 @@ public class RonnyGUI implements GUI{
 		desktop_fields.Field[] guiFields = new desktop_fields.Field[40];
 		guiFields = this.fields.toArray(guiFields);
 		desktop_resources.GUI.create(guiFields);
+	}
+
+	@Override
+	public void showMessage(String message) {
+		desktop_resources.GUI.showMessage(message);
 	}
 
 	@Override
@@ -110,6 +115,7 @@ public class RonnyGUI implements GUI{
 		desktop_resources.GUI.addPlayer(player.getName(), player.getAccount().getBalance());
 	}
 
+
 	@Override
 	public void updateUI(Game game){
 		this.setDice(game.getDiceCup().getValues());
@@ -119,8 +125,11 @@ public class RonnyGUI implements GUI{
 			this.setBalance(player);
 		}
 		this.setOwners(game.getBoard());
+		game.getLosers().stream().forEach(player -> desktop_resources.GUI.removeCar(player.getPosition(),player.getName()));
 
-		//desktop_resources.RonnyGUI.showMessage("test");
-	}
+		while (!game.getMessage().isEmpty()){
+			desktop_resources.GUI.showMessage(game.getMessage().pop());
+		}
+}
 
 }

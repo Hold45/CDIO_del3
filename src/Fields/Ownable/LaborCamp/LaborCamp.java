@@ -1,4 +1,6 @@
-package Ownable;
+package Fields.Ownable.LaborCamp;
+
+import Fields.Ownable.Ownable;
 
 public abstract class LaborCamp extends Ownable {
 

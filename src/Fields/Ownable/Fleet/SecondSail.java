@@ -1,4 +1,4 @@
-package Ownable;
+package Fields.Ownable.Fleet;
 
 public class SecondSail extends Fleet{
 

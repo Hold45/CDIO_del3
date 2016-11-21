@@ -1,7 +1,7 @@
 package Fields.Tax;
 
 
-import Ownable.Ownable;
+import Fields.Ownable.*;
 import Player.Player;
 
 public class Caravan extends Tax{

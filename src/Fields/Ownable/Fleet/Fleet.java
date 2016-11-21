@@ -1,4 +1,6 @@
-package Ownable;
+package Fields.Ownable.Fleet;
+
+import Fields.Ownable.Ownable;
 
 public abstract class Fleet extends Ownable {
 

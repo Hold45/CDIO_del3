@@ -1,4 +1,4 @@
-package Ownable;
+package Fields.Ownable;
 
 public class Crater extends Territory{
 

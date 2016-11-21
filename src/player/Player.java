@@ -4,7 +4,7 @@ import static java.lang.Math.toIntExact;
 
 import Fields.*;
 import Game.*;
-import Ownable.*;
+import Fields.Ownable.*;
 
 public class Player {
 

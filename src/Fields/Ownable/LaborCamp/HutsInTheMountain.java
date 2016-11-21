@@ -1,4 +1,4 @@
-package Ownable;
+package Fields.Ownable.LaborCamp;
 
 
 public class HutsInTheMountain extends LaborCamp{

@@ -1,9 +1,10 @@
-package Ownable;
+package Fields.Ownable;
 
 
 public abstract class Territory extends Ownable {
 	private int rent;
-	
+
+
 	public Territory(String name, String decs, String onLandText, int price, int rent) {
 		super(name, decs, onLandText, price);
 		this.rent = rent;

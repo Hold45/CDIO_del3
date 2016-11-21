@@ -1,4 +1,4 @@
-package Ownable;
+package Fields.Ownable;
 
 import Fields.Field;
 import Player.Player;
