@@ -1,12 +1,10 @@
-package ownable;
+package Ownable;
 
-import fields.Field;
-import player.Account;
-import player.Player;
+import Fields.Field;
+import Player.Player;
 
 public abstract class Ownable extends Field {
 	private Player owner;
-	private boolean owned = false;
 	private int price;
 	
 	public Ownable(String name, String decs, String onLandText, int price) {
@@ -25,12 +23,15 @@ public abstract class Ownable extends Field {
 	
 	public void setOwner(Player owner) {
 		this.owner = owner;
-		this.owned = true;
 		owner.addField(this);
+	}
+
+	public void removeOwner(){
+		this.owner = null;
 	}
 	
 	public boolean isOwned(){
-		return this.owned;
+		return this.owner != null;
 	}
 	
 	public int getPrice(){

@@ -1,11 +1,9 @@
-package player;
-import java.text.NumberFormat.Field;
+package Player;
 import java.util.ArrayList;
-import java.util.stream.Stream;
 
-import fields.*;
-import game.*;
-import ownable.Ownable;
+import Fields.*;
+import Game.*;
+import Ownable.*;
 
 public class Player {
 
@@ -13,14 +11,18 @@ public class Player {
 	private int value;
 	private Game game;
 	private Account account;
-	private ArrayList<Ownable> fields;
+	private ArrayList<Ownable> owns;
+	private int position;
 
 
 
-	public Player (String name, int value, Game game)
+	public Player (String name, Game game)
 	{
+		this.name = name;
 		this.game = game;
 		this.account = new Account(this);
+		this.owns = new ArrayList<>();
+		position = 0;
 	}
 
 	public String getName() {
@@ -47,12 +49,12 @@ public class Player {
 		return account;
 	}
 
-	public ArrayList<Field> getFields() {
-		return fields;
+	public ArrayList<Ownable> getOwns() {
+		return owns;
 	}
 	
-	public void addField(Field field){
-		this.fields.add(field);
+	public void addField(Ownable field){
+		this.owns.add(field);
 	}
 	
 	public void tryPurchase(Ownable field){
@@ -63,14 +65,24 @@ public class Player {
 
 	public int getNumOfFieldType(Field field){
 		int sum = 0;
-		for(Ownable owns : this.fields){
-			if(owns.getClass().isInstance(field.getClass())
+		for(Ownable owns : this.owns){
+			if(owns.getClass().isInstance(field.getClass()))
 				sum++;
 		}
 		return sum;
 	}
-	
 
+	public void takeTurn() {
+		this.game.getBoard().move(this, this.game.getDiceCup().roll().getSum());
+	}
+
+	public int getPosition() {
+		return position;
+	}
+
+	public void setPosition(int position) {
+		this.position = position;
+	}
 }
 
 
