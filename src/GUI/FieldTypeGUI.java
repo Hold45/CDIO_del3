@@ -7,11 +7,11 @@ import desktop_board.Board;
 import desktop_board.Center;
 import desktop_codebehind.SwingComponentFactory;
 
-public class SpaceType extends Field{
+public class FieldTypeGUI extends Ownable{
 
 	private SwingComponentFactory factory = new SwingComponentFactory();
 	
-	public static class Builder extends Field.Builder<SpaceType.Builder> implements iBuilder{
+	public static class Builder extends Field.Builder<FieldTypeGUI.Builder> implements iBuilder{
 		public Builder() {
 			this.bgColor = Board.BASECOLOR;
 			this.fgColor = Color.BLACK;
@@ -19,13 +19,13 @@ public class SpaceType extends Field{
 		
 		@Override
 		@SuppressWarnings("synthetic-access")
-		public SpaceType build(){
-			return new SpaceType(this.bgColor, this.fgColor, this.title, this.subText, this.description);
+		public FieldTypeGUI build(){
+			return new FieldTypeGUI(this.bgColor, this.fgColor, this.title, this.subText, this.description);
 		}
 	}
 	
-	private SpaceType(Color bgColor, Color fgColor, String title, String subText, String description){
-		super(bgColor, fgColor, title, subText, description);
+	private FieldTypeGUI(Color bgColor, Color fgColor, String title, String subText, String description){
+		super(bgColor, fgColor, title, subText, description, "");
         this.layered.add(this.titleLabel, this.factory.createGridBagConstraints(0, 0));
 	}
 	

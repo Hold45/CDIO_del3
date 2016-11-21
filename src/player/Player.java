@@ -1,5 +1,6 @@
 package Player;
 import java.util.ArrayList;
+import static java.lang.Math.toIntExact;
 
 import Fields.*;
 import Game.*;
@@ -64,12 +65,7 @@ public class Player {
 	}
 
 	public int getNumOfFieldType(Field field){
-		int sum = 0;
-		for(Ownable owns : this.owns){
-			if(owns.getClass().isInstance(field.getClass()))
-				sum++;
-		}
-		return sum;
+		return toIntExact(this.owns.stream().filter(field.getClass()::isInstance).count());
 	}
 
 	public void takeTurn() {

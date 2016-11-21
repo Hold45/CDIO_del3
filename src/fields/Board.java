@@ -7,8 +7,10 @@ import Ownable.Crater;
 import Ownable.HutsInTheMountain;
 import Ownable.SecondSail;
 import Player.Player;
+import Ownable.*;
 
 import java.util.Objects;
+import java.util.stream.Stream;
 
 public class Board {
 
@@ -34,6 +36,7 @@ public class Board {
 	public Field[] getFields() {
 		return fields;
 	}
+
 
 	public int getPosition(Field field){
 		for (int i = 0; i < this.fields.length; i++) {
