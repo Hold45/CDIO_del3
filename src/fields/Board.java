@@ -1,16 +1,17 @@
 package Fields;
 
+import Fields.Ownable.Fleet.PrivateerArmade;
+import Fields.Ownable.Fleet.SeaGrover;
+import Fields.Ownable.Fleet.SecondSail;
+import Fields.Ownable.Fleet.TheBuccaneers;
+import Fields.Ownable.LaborCamp.HutsInTheMountain;
+import Fields.Ownable.LaborCamp.ThePit;
+import Fields.Ownable.Territory.Crater;
 import Fields.Refuge.Monastery;
 import Fields.Refuge.WalledCity;
 import Fields.Tax.Caravan;
-import Ownable.Crater;
-import Ownable.HutsInTheMountain;
-import Ownable.SecondSail;
+import Fields.Tax.Goldmine;
 import Player.Player;
-import Ownable.*;
-
-import java.util.Objects;
-import java.util.stream.Stream;
 
 public class Board {
 
@@ -24,7 +25,12 @@ public class Board {
 				new SecondSail(),
 				new Monastery(),
 				new WalledCity(),
-				new Caravan()
+				new Caravan(),
+				new Goldmine(),
+				new SeaGrover(),
+				new TheBuccaneers(),
+				new PrivateerArmade(),
+				new ThePit()
 		};
 	}
 

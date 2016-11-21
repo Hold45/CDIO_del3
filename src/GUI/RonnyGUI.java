@@ -128,7 +128,7 @@ public class RonnyGUI implements GUI{
 		game.getLosers().stream().forEach(player -> desktop_resources.GUI.removeCar(player.getPosition(),player.getName()));
 
 		while (!game.getMessage().isEmpty()){
-			desktop_resources.GUI.showMessage(game.getMessage().pop());
+			this.showMessage(game.getMessage().pop());
 		}
 }
 

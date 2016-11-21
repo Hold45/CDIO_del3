@@ -1,5 +1,7 @@
-package Fields.Ownable;
+package Fields.Ownable.Territory;
 
+
+import Fields.Ownable.Ownable;
 
 public abstract class Territory extends Ownable {
 	private int rent;

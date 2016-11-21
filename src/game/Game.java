@@ -2,29 +2,31 @@ package Game;
 import Die.D6;
 import Die.DiceCup;
 import Fields.*;
-import Ownable.Ownable;
+import Fields.Ownable.*;
 import Player.Player;
 import GUI.*;
 
 import java.util.ArrayList;
 import java.util.Objects;
+import java.util.Stack;
 
 public class Game {
 	
 	private Board board;
 	
-	private ArrayList<String> message;
+	private Stack<String> message;
 	private ArrayList<Player> losers;
 	private ArrayList<Player> players;
 	private DiceCup diceCup;
 	private GUI gui;
 	
 	public Game(GUI gui){
-		this.gui = gui;
-		this.board = new Board();
-		this.diceCup = new DiceCup(new D6(), new D6());
-		this.players = new ArrayList<>();
-		this.message = new ArrayList<>();
+		this.gui        = gui;
+		this.board      = new Board();
+		this.diceCup    = new DiceCup(new D6(), new D6());
+		this.players    = new ArrayList<>();
+		this.message    = new Stack<>();
+		this.losers     = new ArrayList<>();
 	}
 
 	
@@ -58,7 +60,7 @@ public class Game {
 		this.message.add(msg);
 	}
 
-	public ArrayList<String> getMessage() {
+	public Stack<String> getMessage() {
 		return message;
 	}
 
@@ -94,5 +96,9 @@ public class Game {
 
 	public ArrayList<Player> getPlayers() {
 		return players;
+	}
+
+	public ArrayList<Player> getLosers() {
+		return losers;
 	}
 }
