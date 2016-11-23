@@ -4,19 +4,34 @@ import Fields.Board;
 import Fields.Field;
 import Game.Game;
 import Player.Player;
+import desktop_codebehind.Car;
 import desktop_fields.Empty;
 import Fields.Ownable.*;
 
+import java.awt.*;
 import java.util.ArrayList;
+import java.util.Stack;
 import java.util.stream.Stream;
 
 
 public class RonnyGUI implements GUI{
 
 	private ArrayList<desktop_fields.Field> fields = new ArrayList<>();
+	private Stack<Color> colors = new Stack<>();
+
+	public RonnyGUI(){
+		colors.push(Color.BLACK);
+		colors.push(Color.GREEN);
+		colors.push(Color.PINK);
+		colors.push(Color.CYAN);
+		colors.push(Color.MAGENTA);
+		colors.push(Color.LIGHT_GRAY);
+	}
 
 	public static  void main(String... args){
+
 		RonnyGUI gui = new RonnyGUI();
+
 		Game game = new Game(gui);
 
 		gui.createBoard(game);
@@ -112,7 +127,8 @@ public class RonnyGUI implements GUI{
 
 	@Override
 	public void addPlayer(Player player){
-		desktop_resources.GUI.addPlayer(player.getName(), player.getAccount().getBalance());
+
+		desktop_resources.GUI.addPlayer(player.getName(), player.getAccount().getBalance(), new Car.Builder().primaryColor(this.colors.pop()).typeUfo().build());
 	}
 
 
@@ -124,8 +140,13 @@ public class RonnyGUI implements GUI{
 			this.setPosition(player);
 			this.setBalance(player);
 		}
+		for (Player player: game.getLosers()){
+			this.setPosition(player);
+			this.setBalance(player);
+			desktop_resources.GUI.removeCar(player.getPosition()+1, player.getName());
+		}
+
 		this.setOwners(game.getBoard());
-		game.getLosers().stream().forEach(player -> desktop_resources.GUI.removeCar(player.getPosition(),player.getName()));
 
 		while (!game.getMessage().isEmpty()){
 			this.showMessage(game.getMessage().pop());
