@@ -2,11 +2,12 @@ package Fields.Tax;
 
 
 import Fields.Ownable.*;
+import Game.Game;
 import Player.Player;
 
 public class Caravan extends Tax{
-	public Caravan() {
-		super("name", "decs", "onLandText");
+	public Caravan(Game game) {
+		super(game, "CARAVANNAME", "CARAVANDESC");
 	}
 
 	@Override

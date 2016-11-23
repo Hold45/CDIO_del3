@@ -1,10 +1,11 @@
 package Fields.Tax;
 
+import Game.Game;
 import Player.Player;
 
 public class Goldmine extends Tax {
-	public Goldmine() {
-		super("goldmine","decs", "onLandText");
+	public Goldmine(Game game) {
+		super(game, "GOLDMINENAME","GOLDMINEDESC");
 	}
 
 	@Override

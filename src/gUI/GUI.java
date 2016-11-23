@@ -5,7 +5,11 @@ import Fields.Field;
 import Game.Game;
 import Player.Player;
 
+import java.util.Locale;
+import java.util.ResourceBundle;
+
 public interface GUI {
+	ResourceBundle language = ResourceBundle.getBundle("LabelsBundle", Locale.getDefault());
 
 	void updateUI(Game game);
 	void addPlayer(Player player);
@@ -19,4 +23,5 @@ public interface GUI {
 	void addField(Field field);
 	void createBoard(Game game);
 	void showMessage(String message);
+
 }

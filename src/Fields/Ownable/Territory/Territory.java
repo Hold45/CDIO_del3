@@ -2,13 +2,14 @@ package Fields.Ownable.Territory;
 
 
 import Fields.Ownable.Ownable;
+import Game.Game;
 
 public abstract class Territory extends Ownable {
 	private int rent;
 
 
-	public Territory(String name, String decs, String onLandText, int price, int rent) {
-		super(name, decs, onLandText, price);
+	public Territory(Game game, String name,int price, int rent) {
+		super(game, name, "TERRDESC", price);
 		this.rent = rent;
 	}
 
@@ -18,6 +19,10 @@ public abstract class Territory extends Ownable {
 		return this.rent;
 	}
 	
+	@Override
+	public String getDecs(){
+		return String.format(super.getDecs(), super.getPrice(), this.getRent());
+	}
 
 	
 }

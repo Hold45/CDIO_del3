@@ -58,14 +58,23 @@ public class Player {
 		this.owns.add(field);
 	}
 	
-	public void tryPurchase(Ownable field){
+	public boolean tryPurchase(Ownable field){
 		if(this.getAccount().getBalance() >= field.getPrice()){
 			field.purchase(this);
+			return true;
 		}
+		return false;
 	}
 
-	public int getNumOfFieldType(Field field){
-		return toIntExact(this.owns.stream().filter(field.getClass()::isInstance).count());
+	public int getNumOfFieldType(Class field){
+		int sum = 0;
+		for (Ownable own: this.owns) {
+			if(field.isAssignableFrom(own.getClass())){
+				sum++;
+			}
+		}
+		return sum;
+		//return toIntExact(this.owns.stream().filter(ownable -> field instanceof ownable).count());
 	}
 
 	public void takeTurn() {

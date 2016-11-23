@@ -1,7 +1,9 @@
 package Fields.Ownable.Fleet;
 
+import Game.Game;
+
 public class SeaGrover extends Fleet {
-	public SeaGrover() {
-		super("Sea grover", "decs", "onLandText", 4000);
+	public SeaGrover(Game game) {
+		super(game, "SEAGROVENAME", 4000);
 	}
 }

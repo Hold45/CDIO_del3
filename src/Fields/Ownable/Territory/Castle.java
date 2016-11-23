@@ -1,7 +1,9 @@
 package Fields.Ownable.Territory;
 
+import Game.Game;
+
 public class Castle extends Territory {
-	public Castle() {
-		super("name", "decs", "onLandText", 8000, 4000);
+	public Castle(Game game) {
+		super(game, "CASTLENAME", 8000, 4000);
 	}
 }

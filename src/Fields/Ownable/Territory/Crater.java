@@ -1,9 +1,11 @@
 package Fields.Ownable.Territory;
 
+import Game.Game;
+
 public class Crater extends Territory{
 
-	public Crater() {
-		super("Creater", "creater desc", "onLandText", 1500, 300);
+	public Crater(Game game) {
+		super(game, "CRATERNAME", 1500, 300);
 	}
 	
 }

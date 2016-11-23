@@ -1,7 +1,9 @@
 package Fields.Ownable.Territory;
 
+import Game.Game;
+
 public class ColdDesert extends Territory {
-	public ColdDesert() {
-		super("name", "decs", "onLandText", 3000, 700);
+	public ColdDesert(Game game) {
+		super(game, "COLDDESERTNAME", 3000, 700);
 	}
 }

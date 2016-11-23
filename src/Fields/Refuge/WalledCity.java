@@ -1,9 +1,11 @@
 package Fields.Refuge;
 
 
+import Game.Game;
+
 public class WalledCity extends Refuge {
-	public WalledCity() {
-		super("nam", "decs", "onLandText");
+	public WalledCity(Game game) {
+		super(game, "WALLEDCITYNAME", "WALLEDCITYDESC", "WALLEDCITYONLAND");
 	}
 
 	@Override

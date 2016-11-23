@@ -1,9 +1,11 @@
 package Fields.Ownable.LaborCamp;
 
 
+import Game.Game;
+
 public class HutsInTheMountain extends LaborCamp{
 
-	public HutsInTheMountain() {
-		super("Name", "decs", "onLandText", 2500);
+	public HutsInTheMountain(Game game) {
+		super(game, "HUTSINTHEMOUNTAINNAME", "HUTSINTHEMOUNTAINDESC", 2500);
 	}
 }

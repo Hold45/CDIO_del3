@@ -1,8 +1,10 @@
 package Fields.Refuge;
 
+import Game.Game;
+
 public class Monastery extends Refuge {
-	public Monastery() {
-		super("name", "decs", "onLandText");
+	public Monastery(Game game) {
+		super(game, "MONASTERYNAME", "MONASTERYDESC", "MONASTERYONLAND");
 	}
 
 	@Override

@@ -1,14 +1,15 @@
 package Fields.Ownable;
 
 import Fields.Field;
+import Game.Game;
 import Player.Player;
 
 public abstract class Ownable extends Field {
 	private Player owner;
 	private int price;
 	
-	public Ownable(String name, String decs, String onLandText, int price) {
-		super(name, decs, onLandText);
+	public Ownable(Game game,String name, String decs, int price) {
+		super(game, name, decs);
 		this.price = price;
 	}
 
@@ -42,14 +43,18 @@ public abstract class Ownable extends Field {
 	
 	@Override
 	public void onLand(Player player){
-		super.onLand(player);
-		
 		if(this.isOwned()){
 			player.getAccount().transfer(this.getOwner().getAccount(), this.getRent());
+			player.getGame().addMessage("RENTSPACE", super.getName(), Integer.toString(this.getRent()));
 		}
 		else{
-			player.tryPurchase(this);
+			if(player.tryPurchase(this)){
+				player.getGame().addMessage("BUYSPACE", super.getName(),Integer.toString(this.getPrice()));
+			}
+			else{
+				player.getGame().addMessage("DONTBUY", super.getName());
+			}
 		}
 	}
-	
+
 }

@@ -6,31 +6,42 @@ import Fields.Ownable.Fleet.SecondSail;
 import Fields.Ownable.Fleet.TheBuccaneers;
 import Fields.Ownable.LaborCamp.HutsInTheMountain;
 import Fields.Ownable.LaborCamp.ThePit;
-import Fields.Ownable.Territory.Crater;
+import Fields.Ownable.Territory.*;
 import Fields.Refuge.Monastery;
 import Fields.Refuge.WalledCity;
 import Fields.Tax.Caravan;
 import Fields.Tax.Goldmine;
+import Game.Game;
 import Player.Player;
 
 public class Board {
 
 	private Field[] fields;
 	
-	public Board()
+	public Board(Game game)
 	{
 		this.fields = new Field[]{
-				new Crater(),
-				new HutsInTheMountain(),
-				new SecondSail(),
-				new Monastery(),
-				new WalledCity(),
-				new Caravan(),
-				new Goldmine(),
-				new SeaGrover(),
-				new TheBuccaneers(),
-				new PrivateerArmade(),
-				new ThePit()
+				new TribeEncampment(game),
+				new Crater(game),
+				new Mountain(game),
+				new ColdDesert(game),
+				new BlackCave(game),
+				new TheWerewall(game),
+				new MountainVillage(game),
+				new SouthCitadel(game),
+				new PalaceGates(game),
+				new Tower(game),
+				new Castle(game),
+				new WalledCity(game),
+				new Monastery(game),
+				new HutsInTheMountain(game),
+				new ThePit(game),
+				new Goldmine(game),
+				new Caravan(game),
+				new SecondSail(game),
+				new SeaGrover(game),
+				new TheBuccaneers(game),
+				new PrivateerArmade(game)
 		};
 	}
 

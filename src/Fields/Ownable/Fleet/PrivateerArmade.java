@@ -1,8 +1,10 @@
 package Fields.Ownable.Fleet;
 
 
+import Game.Game;
+
 public class PrivateerArmade extends Fleet {
-	public PrivateerArmade() {
-		super("name", "dec", "onLandText", 4000);
+	public PrivateerArmade(Game game) {
+		super(game, "PRIVATEERARMADENAME" , 4000);
 	}
 }

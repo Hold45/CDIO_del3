@@ -36,7 +36,6 @@ public class RonnyGUI implements GUI{
 
 		gui.createBoard(game);
 
-
 		gui.addPlayers(game);
 
 		game.start();
@@ -74,12 +73,12 @@ public class RonnyGUI implements GUI{
 
 	@Override
 	public void addPlayers(Game game) {
-		int playerNum = this.getInteger("Select number of players between 2-6", 2,6);
+		int playerNum = this.getInteger(GUI.language.getString("NUMPLAYER"), 2,6);
 
 		for (int i = 1; i < playerNum+1; i++) {
-			String name = this.getString("Enter name of player "+i);
+			String name = this.getString(String.format(GUI.language.getString("PLAYERNAME"),i));
 			if(!game.addPlayer(name)){
-				name = this.getString("Player name already exist. Enter name of player "+i);
+				name = this.getString(String.format(GUI.language.getString("PLAYERNAMEEXIST"),i));
 				while (!game.addPlayer(name));
 			}
 			this.addPlayer(game.getPlayer(name));
@@ -149,7 +148,8 @@ public class RonnyGUI implements GUI{
 		this.setOwners(game.getBoard());
 
 		while (!game.getMessage().isEmpty()){
-			this.showMessage(game.getMessage().pop());
+			game.getMessage().pop();
+			//this.showMessage(game.getMessage().pop());
 		}
 }
 

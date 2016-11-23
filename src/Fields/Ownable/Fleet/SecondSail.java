@@ -1,8 +1,10 @@
 package Fields.Ownable.Fleet;
 
+import Game.Game;
+
 public class SecondSail extends Fleet{
 
-	public SecondSail() {
-		super("name", "decs", "onLandText", 4000);
+	public SecondSail(Game game) {
+		super(game, "SECONDSAILNAME", 4000);
 	}
 }

@@ -8,6 +8,7 @@ import GUI.*;
 
 import java.util.ArrayList;
 import java.util.Objects;
+import java.util.ResourceBundle;
 import java.util.Stack;
 
 public class Game {
@@ -19,14 +20,16 @@ public class Game {
 	private ArrayList<Player> players;
 	private DiceCup diceCup;
 	private GUI gui;
+	private ResourceBundle language;
 	
 	public Game(GUI gui){
 		this.gui        = gui;
-		this.board      = new Board();
+		this.board      = new Board(this);
 		this.diceCup    = new DiceCup(new D6(), new D6());
 		this.players    = new ArrayList<>();
 		this.message    = new Stack<>();
 		this.losers     = new ArrayList<>();
+		this.language   = GUI.language;
 	}
 
 	
@@ -39,7 +42,7 @@ public class Game {
 				this.updateUI();
 			}
 		}
-		this.message.add("YAY player won");
+		this.addMessage("WIN",this.players.get(0).getName());
 		this.updateUI();
 	}
 
@@ -56,8 +59,8 @@ public class Game {
 	}
 
 
-	public void addMessage (String msg) {
-		this.message.add(msg);
+	public void addMessage (String msg, String... args) {
+		this.message.add(String.format(language.getString(msg), args));
 	}
 
 	public Stack<String> getMessage() {
@@ -100,5 +103,9 @@ public class Game {
 
 	public ArrayList<Player> getLosers() {
 		return losers;
+	}
+
+	public String getLanguage(String text) {
+		return language.getString(text);
 	}
 }
