@@ -40,6 +40,8 @@ public class Game {
 			for (Player player: tempPlayers) {
 				this.takeTurn(player);
 				this.updateUI();
+				if(this.checkGameEnd())
+					break;
 			}
 		}
 		this.addMessage("WIN",this.players.get(0).getName());

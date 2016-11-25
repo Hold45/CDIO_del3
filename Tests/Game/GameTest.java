@@ -54,4 +54,17 @@ public class GameTest {
 		assertThat(game.getLanguage("TRIBEENCAMPMENTNAME")).isEqualTo("Tribe Encampment");
 	}
 
+	@Test
+	public void testRunGame() throws Exception{
+		for (int i = 0; i < 10000; i++) {
+			game = new Game(new DummyGUI());
+			game.addPlayer("P1");
+			game.addPlayer("P2");
+			game.addPlayer("P3");
+			game.start();
+			game = null;
+		}
+
+	}
+
 }

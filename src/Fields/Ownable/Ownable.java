@@ -44,8 +44,8 @@ public abstract class Ownable extends Field {
 	@Override
 	public void onLand(Player player){
 		if(this.isOwned()){
-			player.getAccount().transfer(this.getOwner().getAccount(), this.getRent());
 			player.getGame().addMessage("RENTSPACE", super.getName(), Integer.toString(this.getRent()));
+			player.getAccount().transfer(this.getOwner().getAccount(), this.getRent());
 		}
 		else{
 			if(player.tryPurchase(this)){
