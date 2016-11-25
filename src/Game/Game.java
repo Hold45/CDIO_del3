@@ -39,10 +39,11 @@ public class Game {
 
 			for (Player player: tempPlayers) {
 				this.takeTurn(player);
-				
-				if(this.checkGameEnd())
+
+				if(this.checkGameEnd()){
 					this.updateUI();
 					break;
+				}
 				this.updateUI();
 			}
 		}
