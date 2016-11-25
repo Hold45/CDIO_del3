@@ -106,7 +106,15 @@ rykbrik|Brikker kan rykkes fra et felt til et andet.
 
 felter<Felter
 
->Attributter
+>Lande på et felt
+
+>Spillere kan lande på et felt.
+
+>Når en spiller lander på et felt, refereres de til som tilkommeren.
+
+<Når en spiller lander på et felt har det en effekt.
+
+<Attributter
 
 >Hvert felt har et navn
 
@@ -132,19 +140,25 @@ Eksempel: Spiller B har 1000 penge og lander på et felt der koster 1300 penge. 
 
 |Spillere forsøger at købe felter, hvis de er af supertypen grund, når de lander på dem, se \ref:landpaagrund.
 
-<Når en spiller erhverver sig ejerskab over et felt ejer de det ind til de taber, se \ref:misterejerskabtab.
+|Når en spiller erhverver sig ejerskab over et felt ejer de det ind til de taber, se \ref:misterejerskabtab.
 
-|Grunde
+|Spillere har en sammlet ejendom.
 
->Grunde kan ejes af spillere.
+>Spilleres sammelde ejendom svarer til summen af prisen på alle grunde de ejer plus deres pengebeholdning.
 
-|Når en spiller lander på en grund har det en effekt.
+<<Grunde
 
-landpaagrund>Når en spiller lander på en grund, der ikke ejes af nogen spillere, skal vedkommende forsøge at købe den.
+>Grunde har en pris.
 
-|Når en spiller lander på en grund, der ejes af en anden spiller, skal vedkommende betale en mængde penge afhængig af den pågældende grund til ejeren.
+>En grunds pris er hvad der skal betales for et købe det.
 
-|Når en spiller lander på en grund som vedkommende ejer i forvejen, sker der ikke noget.
+<Grunde kan ejes af spillere.
+
+landpaagrund>Når en spiller lander på en grund, der ikke ejes af nogen spillere, skal tilkommeren forsøge at købe den.
+
+|Når en spiller lander på en grund, der ejes af en anden spiller, skal tilkommeren betale en mængde penge, afhængig af den pågældende, grund til ejeren af grunden.
+
+|Når en spiller lander på en grund som tilkommeren ejer i forvejen, sker der ikke noget.
 
 <<Hændelser
 

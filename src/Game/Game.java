@@ -39,9 +39,11 @@ public class Game {
 
 			for (Player player: tempPlayers) {
 				this.takeTurn(player);
-				this.updateUI();
+				
 				if(this.checkGameEnd())
+					this.updateUI();
 					break;
+				this.updateUI();
 			}
 		}
 		this.addMessage("WIN",this.players.get(0).getName());
