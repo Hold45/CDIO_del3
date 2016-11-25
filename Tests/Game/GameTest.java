@@ -56,7 +56,7 @@ public class GameTest {
 
 	@Test
 	public void testRunGame() throws Exception{
-		for (int i = 0; i < 10000; i++) {
+		for (int i = 0; i < 1000; i++) {
 			game = new Game(new DummyGUI());
 			game.addPlayer("P1");
 			game.addPlayer("P2");
