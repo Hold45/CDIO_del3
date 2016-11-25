@@ -30,7 +30,7 @@ public class D6Test {
 
 		int rolls = 60000;
 		int[] num = {0,0,0,0,0,0};
-
+		
 		for (int i = 0; i < rolls; i++)
 			num[die.roll()-1]++;
 

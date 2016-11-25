@@ -12,16 +12,16 @@ import java.util.ResourceBundle;
 import java.util.Stack;
 
 public class Game {
-	
+
 	private Board board;
-	
+
 	private Stack<String> message;
 	private ArrayList<Player> losers;
 	private ArrayList<Player> players;
 	private DiceCup diceCup;
 	private GUI gui;
 	private ResourceBundle language;
-	
+
 	public Game(GUI gui){
 		this.gui        = gui;
 		this.board      = new Board(this);
@@ -32,7 +32,7 @@ public class Game {
 		this.language   = GUI.language;
 	}
 
-	
+
 	public void start(){
 		while (!this.checkGameEnd()){
 			ArrayList<Player> tempPlayers = (ArrayList<Player>) this.players.clone();

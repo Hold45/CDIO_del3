@@ -8,14 +8,14 @@ public abstract class Field {
 	private String name;
 	private String decs;
 	private Game game;
-	
-	
+
+
 	public Field(Game game,String name, String decs){
 		this.game = game;
 		this.decs = decs;
 		this.name = name;
 	}
-		
+
 
 	public void onLand (Player player){
 	}

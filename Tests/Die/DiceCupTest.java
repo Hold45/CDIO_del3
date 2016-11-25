@@ -36,9 +36,4 @@ public class DiceCupTest {
 	public void testGetSum() throws Exception {
 		assertThat(Stream.of(diceCup.getDice()).mapToInt(Die::getValue).sum()).isEqualTo(diceCup.getSum());
 	}
-
-	@Test
-	public void testRoll() throws Exception {
-		assertThat(diceCup.getSum()).isNotEqualTo(diceCup.roll().getSum());
-	}
 }
