@@ -140,11 +140,19 @@ Eksempel: Spiller B har 1000 penge og lander på et felt der koster 1300 penge. 
 
 |Spillere forsøger at købe felter, hvis de er af supertypen grund, når de lander på dem, se \ref:landpaagrund.
 
-<Når en spiller erhverver sig ejerskab over et felt ejer de det ind til de taber, se \ref:misterejerskabtab.
+|Når en spiller erhverver sig ejerskab over et felt ejer de det ind til de taber, se \ref:misterejerskabtab.
 
-|Grunde
+|Spillere har en sammlet ejendom.
 
->Grunde kan ejes af spillere.
+>Spilleres sammelde ejendom svarer til summen af prisen på alle grunde de ejer plus deres pengebeholdning.
+
+<<Grunde
+
+>Grunde har en pris.
+
+>En grunds pris er hvad der skal betales for et købe det.
+
+<Grunde kan ejes af spillere.
 
 landpaagrund>Når en spiller lander på en grund, der ikke ejes af nogen spillere, skal tilkommeren forsøge at købe den.
 

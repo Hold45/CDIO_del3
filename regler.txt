@@ -139,21 +139,29 @@ Eksempel: Fire spillere, spiller A, B, C, og D spiller et spil. De er placeret i
 Eksempel: Spiller A har 1000 penge og lander på et felt der koster 700 penge. Spiller A har nu 300 penge og eger feltet.
 Eksempel: Spiller B har 1000 penge og lander på et felt der koster 1300 penge. Spiller B har fortsat 1000 penge, men eger ikke feltet.
 
-703.4. Spillere forsøger at købe felter, hvis de er af supertypen grund, når de lander på dem, se 705.1a.
+703.4. Spillere forsøger at købe felter, hvis de er af supertypen grund, når de lander på dem, se 704.2a.
 
-704. Når en spiller erhverver sig ejerskab over et felt ejer de det ind til de taber, se 401.2b.
+703.5. Når en spiller erhverver sig ejerskab over et felt ejer de det ind til de taber, se 401.2b.
 
-705. Grunde
+703.6. Spillere har en sammlet ejendom.
 
-705.1. Grunde kan ejes af spillere.
+703.6a. Spilleres sammelde ejendom svarer til summen af prisen på alle grunde de ejer plus deres pengebeholdning.
 
-705.1a. Når en spiller lander på en grund, der ikke ejes af nogen spillere, skal tilkommeren forsøge at købe den.
+704. Grunde
 
-705.1b. Når en spiller lander på en grund, der ejes af en anden spiller, skal tilkommeren betale en mængde penge, afhængig af den pågældende, grund til ejeren af grunden.
+704.1. Grunde har en pris.
 
-705.1c. Når en spiller lander på en grund som tilkommeren ejer i forvejen, sker der ikke noget.
+704.1a. En grunds pris er hvad der skal betales for et købe det.
 
-706. Hændelser
+704.2. Grunde kan ejes af spillere.
 
-706.1. Når en spiller lander på en hændelse har det en effekt afhængig af feltet.
+704.2a. Når en spiller lander på en grund, der ikke ejes af nogen spillere, skal tilkommeren forsøge at købe den.
+
+704.2b. Når en spiller lander på en grund, der ejes af en anden spiller, skal tilkommeren betale en mængde penge, afhængig af den pågældende, grund til ejeren af grunden.
+
+704.2c. Når en spiller lander på en grund som tilkommeren ejer i forvejen, sker der ikke noget.
+
+705. Hændelser
+
+705.1. Når en spiller lander på en hændelse har det en effekt afhængig af feltet.
 
