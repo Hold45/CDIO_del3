@@ -1,4 +1,4 @@
-package Fields.Ownable.Fleet;
+package Fields.Refuge;
 
 import Fields.Board;
 import Fields.Ownable.Ownable;
@@ -8,11 +8,11 @@ import Player.Player;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import static org.assertj.core.api.Assertions.*;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.Assert.*;
 
-public class PrivateerArmadeTest {
+public class WalledCityTest {
 
 	public Game game;
 	public Player p1;
@@ -38,23 +38,10 @@ public class PrivateerArmadeTest {
 	}
 
 	@Test
-	public void testBuy() throws Exception{
-		this.board.move(this.p1, 17);
-		assertThat(((Ownable)this.board.getFields()[17]).getOwner()).isEqualTo(this.p1);
+	public void testPayment() throws Exception{
+		board.move(p1,11);
+		assertThat(p1.getAccount().getBalance()).isEqualTo(30000+5000);
+
 	}
-
-	@Test
-	public void testRent() throws Exception{
-		((Ownable)board.getFields()[17]).setOwner(p2);
-		board.move(p1,17);
-		assertThat(p1.getAccount().getBalance()).isEqualTo(29500);
-
-		((Ownable)board.getFields()[18]).setOwner(p2);
-		((Ownable)board.getFields()[19]).setOwner(p2);
-		board.move(p1,1);
-
-		assertThat(p1.getAccount().getBalance()).isEqualTo(27500);
-	}
-
 
 }

@@ -6,10 +6,10 @@ import Fields.*;
 import Game.*;
 import Fields.Ownable.*;
 
+
 public class Player {
 
 	private String name;
-	private int value;
 	private Game game;
 	private Account account;
 	private ArrayList<Ownable> owns;
@@ -32,14 +32,6 @@ public class Player {
 
 	public void setName(String name) {
 		this.name = name;
-	}
-
-	public int getValue() {
-		return value;
-	}
-
-	public void setValue(int value) {
-		this.value = value;
 	}
 
 	public Game getGame() {
@@ -67,14 +59,7 @@ public class Player {
 	}
 
 	public int getNumOfFieldType(Class field){
-		int sum = 0;
-		for (Ownable own: this.owns) {
-			if(field.isAssignableFrom(own.getClass())){
-				sum++;
-			}
-		}
-		return sum;
-		//return toIntExact(this.owns.stream().filter(ownable -> field instanceof ownable).count());
+		return toIntExact(this.owns.stream().filter(ownable -> field.isAssignableFrom(ownable.getClass())).count());
 	}
 
 	public void takeTurn() {

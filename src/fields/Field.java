@@ -1,4 +1,5 @@
 package Fields;
+import Game.Game;
 import Player.*;
 
 
@@ -6,30 +7,28 @@ public abstract class Field {
 
 	private String name;
 	private String decs;
-	private String onLandText;
+	private Game game;
 	
 	
-	public Field(String name, String decs, String onLandText){
+	public Field(Game game,String name, String decs){
+		this.game = game;
 		this.decs = decs;
 		this.name = name;
-		this.onLandText = onLandText;
-		
 	}
 		
 
 	public void onLand (Player player){
-		player.getGame().addMessage(this.onLandText);
-		
 	}
 
 	public String getName() {
-		return name;
+		return this.game.getLanguage(this.name);
 	}
 
 	public String getDecs() {
-		return decs;
+		return this.game.getLanguage(this.decs);
 	}
 
-	
-	
+	public Game getGame() {
+		return this.game;
+	}
 }
