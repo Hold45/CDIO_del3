@@ -12,7 +12,7 @@
 
 101.4. Hver spiller har en unik brik, se 6.
 
-101.5. Hver spiller kan eje grunde, se 702.
+101.5. Hver spiller kan eje grunde, se 703.
 
 102. Struktur
 
@@ -65,7 +65,7 @@ Eksempel: Fire spillere, spiller A, B, C, og D spiller et spil. De er placeret i
 
 401.2a. Spillerens brik fjernes fra brættet.
 
-401.2b. Spillerens mister ejerskab af alle sine felter.
+401.2b. Spilleren mister ejerskab af alle deres felter.
 
 401.2c. Spilleren deltager ikke længere i spillet, og fjernes fra turrækkefølgen.
 
@@ -107,47 +107,53 @@ Eksempel: Fire spillere, spiller A, B, C, og D spiller et spil. De er placeret i
 
 7. Felter
 
-701. Attributter
+701. Lande på et felt
 
-701.1. Hvert felt har et navn
+701.1. Spillere kan lande på et felt.
 
-701.2. Hvert felt har en supertype og en type.
+701.1a. Når en spiller lander på et felt, refereres de til som tilkommeren.
 
-701.3. Der er to supertyper af felter; felter der kan eges, kaldet grunde, og felter der ikke kan, kaldet hændelser.
+701.2. Når en spiller lander på et felt har det en effekt.
 
-701.4. Der er 5 typer felter: Territory, Refuge, Labor Camp, Tax, og Fleet.
+702. Attributter
 
-701.5. Felter af typen Territory, Labor Camp, eller Fleet er af supertypen grund.
+702.1. Hvert felt har et navn
 
-701.6. Felter af typen Refuge eller Tax er af supertypen hændelse.
+702.2. Hvert felt har en supertype og en type.
 
-702. Ejerskab af felter
+702.3. Der er to supertyper af felter; felter der kan eges, kaldet grunde, og felter der ikke kan, kaldet hændelser.
 
-702.1. Nogle felter kan købes af spillere.
+702.4. Der er 5 typer felter: Territory, Refuge, Labor Camp, Tax, og Fleet.
 
-702.2. Når en spiller køber et felt, for de ejerskab over det.
+702.5. Felter af typen Territory, Labor Camp, eller Fleet er af supertypen grund.
 
-702.3. Når en spiller forsøger at købe et felt, sammenligner de deres penge med feltets pris. Hvis de har mindst lige så mange penge som feltet koster, mister de så mange penge som det koster, og køber feltet. Hvis ikke de har nok sker der ikke noget.
+702.6. Felter af typen Refuge eller Tax er af supertypen hændelse.
+
+703. Ejerskab af felter
+
+703.1. Nogle felter kan købes af spillere.
+
+703.2. Når en spiller køber et felt, for de ejerskab over det.
+
+703.3. Når en spiller forsøger at købe et felt, sammenligner de deres penge med feltets pris. Hvis de har mindst lige så mange penge som feltet koster, mister de så mange penge som det koster, og køber feltet. Hvis ikke de har nok sker der ikke noget.
 Eksempel: Spiller A har 1000 penge og lander på et felt der koster 700 penge. Spiller A har nu 300 penge og eger feltet.
 Eksempel: Spiller B har 1000 penge og lander på et felt der koster 1300 penge. Spiller B har fortsat 1000 penge, men eger ikke feltet.
 
-702.4. Spillere forsøger at købe felter, hvis de er af supertypen grund, når de lander på dem, se 704.2a.
+703.4. Spillere forsøger at købe felter, hvis de er af supertypen grund, når de lander på dem, se 705.1a.
 
-703. Når en spiller erhverver sig ejerskab over et felt ejer de det ind til de taber, se 401.2b.
+704. Når en spiller erhverver sig ejerskab over et felt ejer de det ind til de taber, se 401.2b.
 
-704. Grunde
+705. Grunde
 
-704.1. Grunde kan ejes af spillere.
+705.1. Grunde kan ejes af spillere.
 
-704.2. Når en spiller lander på en grund har det en effekt.
+705.1a. Når en spiller lander på en grund, der ikke ejes af nogen spillere, skal tilkommeren forsøge at købe den.
 
-704.2a. Når en spiller lander på en grund, der ikke ejes af nogen spillere, skal vedkommende forsøge at købe den.
+705.1b. Når en spiller lander på en grund, der ejes af en anden spiller, skal tilkommeren betale en mængde penge, afhængig af den pågældende, grund til ejeren af grunden.
 
-704.2b. Når en spiller lander på en grund, der ejes af en anden spiller, skal vedkommende betale en mængde penge afhængig af den pågældende grund til ejeren.
+705.1c. Når en spiller lander på en grund som tilkommeren ejer i forvejen, sker der ikke noget.
 
-704.2c. Når en spiller lander på en grund som vedkommende ejer i forvejen, sker der ikke noget.
+706. Hændelser
 
-705. Hændelser
-
-705.1. Når en spiller lander på en hændelse har det en effekt afhængig af feltet.
+706.1. Når en spiller lander på en hændelse har det en effekt afhængig af feltet.
 

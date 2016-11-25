@@ -106,7 +106,15 @@ rykbrik|Brikker kan rykkes fra et felt til et andet.
 
 felter<Felter
 
->Attributter
+>Lande på et felt
+
+>Spillere kan lande på et felt.
+
+>Når en spiller lander på et felt, refereres de til som tilkommeren.
+
+<Når en spiller lander på et felt har det en effekt.
+
+<Attributter
 
 >Hvert felt har et navn
 
@@ -138,13 +146,11 @@ Eksempel: Spiller B har 1000 penge og lander på et felt der koster 1300 penge. 
 
 >Grunde kan ejes af spillere.
 
-|Når en spiller lander på en grund har det en effekt.
+landpaagrund>Når en spiller lander på en grund, der ikke ejes af nogen spillere, skal tilkommeren forsøge at købe den.
 
-landpaagrund>Når en spiller lander på en grund, der ikke ejes af nogen spillere, skal vedkommende forsøge at købe den.
+|Når en spiller lander på en grund, der ejes af en anden spiller, skal tilkommeren betale en mængde penge, afhængig af den pågældende, grund til ejeren af grunden.
 
-|Når en spiller lander på en grund, der ejes af en anden spiller, skal vedkommende betale en mængde penge afhængig af den pågældende grund til ejeren.
-
-|Når en spiller lander på en grund som vedkommende ejer i forvejen, sker der ikke noget.
+|Når en spiller lander på en grund som tilkommeren ejer i forvejen, sker der ikke noget.
 
 <<Hændelser
 
