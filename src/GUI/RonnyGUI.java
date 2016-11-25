@@ -76,13 +76,9 @@ public class RonnyGUI implements GUI{
 		int playerNum = this.getInteger(GUI.language.getString("NUMPLAYER"), 2,6);
 
 		for (int i = 1; i < playerNum+1; i++) {
-			String name = this.getString(String.format(GUI.language.getString("PLAYERNAME"),i));
-			if(!game.addPlayer(name)){
-				name = this.getString(String.format(GUI.language.getString("PLAYERNAMEEXIST"),i));
-				while (!game.addPlayer(name));
-			}
-			this.addPlayer(game.getPlayer(name));
+			while (!game.addPlayer(this.getString(String.format(GUI.language.getString("PLAYERNAME"),i))));
 		}
+		game.getPlayers().forEach(this::addPlayer);
 	}
 
 	@Override
@@ -126,7 +122,6 @@ public class RonnyGUI implements GUI{
 
 	@Override
 	public void addPlayer(Player player){
-
 		desktop_resources.GUI.addPlayer(player.getName(), player.getAccount().getBalance(), new Car.Builder().primaryColor(this.colors.pop()).typeUfo().build());
 	}
 
