@@ -86,7 +86,7 @@ public class Game {
 
 	public boolean addPlayer(String name){
 		for (Player player: players) {
-			if(Objects.equals(player.getName(), name)){
+			if(Objects.equals(player.getName().toUpperCase(), name.toUpperCase())){
 				return false;
 			}
 		}
