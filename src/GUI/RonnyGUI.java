@@ -148,8 +148,7 @@ public class RonnyGUI implements GUI{
 		this.setOwners(game.getBoard());
 
 		while (!game.getMessage().isEmpty()){
-			game.getMessage().pop();
-			//this.showMessage(game.getMessage().pop());
+			this.showMessage(game.getMessage().pop());
 		}
 }
 
