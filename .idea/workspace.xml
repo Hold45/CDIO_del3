@@ -2,61 +2,62 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd332c55-6f19-4eae-b2b2-7d02c0626c32" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Die/D6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Die/DiceCup.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Die/Die.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Fields/Board.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Fields/Field.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Fields/Ownable/Fleet/Fleet.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Fields/Ownable/Fleet/PrivateerArmade.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Fields/Ownable/Fleet/SeaGrover.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Fields/Ownable/Fleet/SecondSail.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Fields/Ownable/Fleet/TheBuccaneers.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Fields/Ownable/LaborCamp/HutsInTheMountain.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Fields/Ownable/LaborCamp/LaborCamp.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Fields/Ownable/LaborCamp/ThePit.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Fields/Ownable/Ownable.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Fields/Ownable/Territory/BlackCave.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Fields/Ownable/Territory/Castle.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Fields/Ownable/Territory/ColdDesert.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Fields/Ownable/Territory/Crater.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Fields/Ownable/Territory/Mountain.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Fields/Ownable/Territory/MountainVillage.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Fields/Ownable/Territory/PalaceGates.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Fields/Ownable/Territory/SouthCitadel.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Fields/Ownable/Territory/Territory.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Fields/Ownable/Territory/TheWerewall.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Fields/Ownable/Territory/Tower.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Fields/Ownable/Territory/TribeEncampment.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Fields/Refuge/Monastery.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Fields/Refuge/Refuge.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Fields/Refuge/WalledCity.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Fields/Tax/Caravan.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Fields/Tax/Goldmine.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Fields/Tax/Tax.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/GUI/FieldTypeGUI$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/GUI/FieldTypeGUI$Builder.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/GUI/FieldTypeGUI.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/GUI/GUI.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/GUI/RonnyGUI.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Game/Game.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Player/Account.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Player/Player.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/Die/D6Test.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/Die/DiceCupTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/Fields/BoardTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/Fields/Ownable/Fleet/PrivateerArmadeTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/Fields/Ownable/LaborCamp/HutsInTheMountainTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/Fields/Ownable/OwnableTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/Fields/Ownable/Territory/BlackCaveTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/Fields/Refuge/WalledCityTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/Fields/Tax/CaravanTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/GUI/DummyGUI.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/Game/GameTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/Player/AccountTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/Player/PlayerTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/labelsBundle.properties" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Die/D6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Die/DiceCup.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Die/Die.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Fields/Board.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Fields/Field.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Fields/Ownable/Fleet/Fleet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Fields/Ownable/Fleet/PrivateerArmade.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Fields/Ownable/Fleet/SeaGrover.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Fields/Ownable/Fleet/SecondSail.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Fields/Ownable/Fleet/TheBuccaneers.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Fields/Ownable/LaborCamp/HutsInTheMountain.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Fields/Ownable/LaborCamp/LaborCamp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Fields/Ownable/LaborCamp/ThePit.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Fields/Ownable/Ownable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Fields/Ownable/Territory/BlackCave.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Fields/Ownable/Territory/Castle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Fields/Ownable/Territory/ColdDesert.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Fields/Ownable/Territory/Crater.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Fields/Ownable/Territory/Mountain.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Fields/Ownable/Territory/MountainVillage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Fields/Ownable/Territory/PalaceGates.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Fields/Ownable/Territory/SouthCitadel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Fields/Ownable/Territory/Territory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Fields/Ownable/Territory/TheWerewall.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Fields/Ownable/Territory/Tower.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Fields/Ownable/Territory/TribeEncampment.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Fields/Refuge/Monastery.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Fields/Refuge/Refuge.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Fields/Refuge/WalledCity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Fields/Tax/Caravan.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Fields/Tax/Goldmine.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Fields/Tax/Tax.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/GUI/FieldTypeGUI$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/GUI/FieldTypeGUI$Builder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/GUI/FieldTypeGUI.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/GUI/GUI.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/GUI/RonnyGUI.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Game/Game.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Player/Account.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Player/Player.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/labelsBundle.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Die/D6Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Die/DiceCupTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Fields/BoardTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Fields/Ownable/Fleet/PrivateerArmadeTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Fields/Ownable/LaborCamp/HutsInTheMountainTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Fields/Ownable/OwnableTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Fields/Ownable/Territory/BlackCaveTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Fields/Refuge/WalledCityTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Fields/Tax/CaravanTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/GUI/DummyGUI.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Game/GameTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Player/AccountTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Player/PlayerTest.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CDIO02_Real.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -156,21 +157,9 @@
       <file leaf-file-name="RonnyGUI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/GUI/RonnyGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="180">
+              <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tests/Game/GameTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="636">
-              <caret line="53" column="90" lean-forward="false" selection-start-line="53" selection-start-column="90" selection-end-line="53" selection-end-column="90" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -239,7 +228,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Fields/Ownable/Territory.java" />
         <option value="$PROJECT_DIR$/src/Fields/Ownable/Fleet/PrivateerArmade.java" />
         <option value="$PROJECT_DIR$/src/Fields/Ownable/Fleet/SeaGrover.java" />
         <option value="$PROJECT_DIR$/src/Fields/Ownable/Fleet/SecondSail.java" />
@@ -290,6 +278,7 @@
         <option value="$PROJECT_DIR$/src/GUI/GUI.java" />
         <option value="$PROJECT_DIR$/src/Fields/Field.java" />
         <option value="$PROJECT_DIR$/Tests/Die/DiceCupTest.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -341,92 +330,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="CDIO_del3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CDIO02_Real" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CDIO_del3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CDIO02_Real" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CDIO_del3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GUI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CDIO02_Real" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CDIO_del3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CDIO02_Real" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CDIO_del3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Fields" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CDIO02_Real" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CDIO_del3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Die" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1075,7 +978,7 @@
       <workItem from="1479724803731" duration="3770000" />
       <workItem from="1479728697655" duration="20190000" />
       <workItem from="1480006414759" duration="20000" />
-      <workItem from="1480006456801" duration="5610000" />
+      <workItem from="1480006456801" duration="5763000" />
     </task>
     <task id="LOCAL-00001" summary="some work was done&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;or was it?">
       <created>1479302955225</created>
@@ -1140,7 +1043,14 @@
       <option name="project" value="LOCAL" />
       <updated>1480071045723</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="tried to fix case insencitive windows bullshit">
+      <created>1480071395528</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1480071395528</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1176,7 +1086,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38446000" />
+    <option name="totallyTimeSpent" value="38599000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -1194,10 +1104,10 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901296" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901296" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32901296" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32901296" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901296" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1252,13 +1162,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Fields/Ownable/Fleet/SecondSail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Fields/Ownable/Fleet/TheBuccaneers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1722,10 +1625,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/RonnyGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
           <folding />
         </state>
       </provider>
